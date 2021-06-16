@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1.0, user-scalable=0,viewport-fit=cover">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel=" stylesheet" href="https://h1code.royal-test.com/css/main.css?20210206020607">
+    <!-- icon -->
+    <link rel=" stylesheet" href="https://h1code.royal-test.com/fonts/iconfont.css">
+    <!-- 修改 -->
+    <link rel="stylesheet" href="css/change.css">
+</head>
+
+<body>
+    <!-- navigation -->
+    <nav class="header">
+
+        <a class="left-item"><i class="iconfont ic-menu"></i></a>
+        <div class="nav-title">
+            <div id="divLogo" class="logo" style="background-image: url(https://h1code.royal-test.com/images/zh-tw/logo.png);"></div>
+        </div>
+        <div class="right-item">
+            <div id="Service" class="ic-text">客服</div>
+            <i class="iconfont ic-customer-service"></i>
+            <div class="red-dot"></div>
+        </div>
+
+    </nav>
+
+    <div class="main-content bg-index" style="min-height: 927px;">
+        <!-- 輪撥BANNER -->
+        <div class="banner-section ">
+            <div id="bannerSwiper" class="swiper-container swiper-container-initialized swiper-container-horizontal">
+                <div class="swiper-wrapper" id="swiper-wrapper-1b1bed87a6eadc4a" aria-live="off" style="transform: translate3d(0px, 0px, 0px); transition: all 0ms ease 0s;">
+                    <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2" style="width: 651px;">
+                        <img src="images/banner.png">
+                    </div>
+                    <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 2" style="width: 651px;">
+                        <img src="images/banner.png">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+        <!-- 快速選單 -->
+        <div class="quick-menu-section section-padding">
+            <!-- 公告 -->
+            <div class="notice-wrap">
+                <img class="notice" src="images/notice.svg">
+                <marquee behavior="scroll" direction="left">
+                    <span id="News"></span>
+                </marquee>
+            </div>
+            <div class="user-wrap">
+                <!-- 玩家資訊 -->
+                <div id="userInfo" class="user-info">
+                    <div class="user-id"><span id="Text3">Hi,會員請先登入</span></div>
+                </div>
+                <!-- 選單 -->
+                <ul class="menu-list">
+                    <li class="menu-list-item " id="loginbut" onclick="LoginStatus()">
+                        <!--  <i class="icon ic-login">登入 -->
+                        <i class="icon ic-login "></i><span id="LoginStatus">登入</span>
+                    </li>
+                    <li class="menu-list-item">
+                        <i class="icon ic-app"></i><span id="AppDownload">APP下載</span>
+                    </li>
+                    <li class="menu-list-item" id="langPicker">
+                        <i class="icon ic-lang"></i><span id="Language">語系</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Game選單 -->
+        <div class="gamemenu-section scroll section-padding ">
+            <div class="game-btn btn-slot active" id="game-btn-slot">
+                <div class="game-icon slot"></div>
+                <div class="game-text">
+                    <span class="game-text-span">SLOT GAME</span>
+                    <p id="SLOTGame">電子遊藝</p>
+                </div>
+            </div>
+            <div class="game-btn btn-live " id="game-btn-live">
+                <div class="game-icon live"></div>
+                <div class="game-text">
+                    <span class="game-text-span">LIVE CASINO</span>
+                    <p id="LiveCasino">真人娛樂</p>
+                </div>
+            </div>
+            <div class="game-btn btn-board" id="game-btn-board">
+                <div class="game-icon board"></div>
+                <div class="game-text">
+                    <span class="game-text-span">BOARD GAME</span>
+                    <p id="BoardGame">棋牌遊戲</p>
+                </div>
+            </div>
+        </div>
+        <div id="swiper-container-Game" class="swiper-container swiper-container-initialized swiper-container-horizontal">
+            <div class="swiper-wrapper" id="swiper-wrapper-4b97e077dc518f9f" aria-live="polite" style="transform: translate3d(0px, 0px, 0px);">
+                <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 3" style="width: 651px;">
+                    <div class="game-container section-padding slot show">
+                        <div class="game-list">
+                            <img id="imgSlot-01" src="images/slot-01.png">
+                        </div>
+                        <div class="game-list">
+                            <img id="imgSlot-02" src="images/slot-02.png">
+                        </div>
+                        <div class="game-list">
+                            <img id="imgSlot-03" src="images/slot-03.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide swiper-slide-next" role="group" aria-label="2 / 3" style="width: 651px;">
+                    <div class="game-container section-padding live show">
+                        <div class="game-list">
+                            <img id="imgLive-01" src="images/live-01.png">
+                        </div>
+                        <div class="game-list">
+                            <img id="imgLive-02" src="images/live-02.png">
+                        </div>
+                        <div class="game-list">
+                            <img id="imgLive-04" src="images/live-04.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" role="group" aria-label="3 / 3" style="width: 651px;">
+                    <div class="game-container section-padding board show">
+                        <div class="game-list">
+                            <img id="imgBoard-01" src="images/board-01.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-4b97e077dc518f9f" aria-disabled="false"></div>
+            <div class="swiper-button-prev swiper-button-white swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-4b97e077dc518f9f" aria-disabled="true"></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        <div style="height:90px"></div>
+        <!-- login out modal -->
+        <div class="modal " id="exitModal">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-header"></h5>
+                        <button type="button" class="close"></button>
+                    </div>
+                    <div id="Text1" class="modal-body ft-18 center">是否確定登出?</div>
+                    <div class="modal-footer">
+                        <button id="btnLogout" type="button" class="btnbase secondary-btn w-50" onclick="UserLogout()">登出</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Msg  modal -->
+        <div class="modal " id="MsgModal" style="display: none;">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-header"></h5>
+                        <button type="button" class="close"></button>
+                    </div>
+                    <div id="TextMsg" class="modal-body ft-18 center">NewsError: status 0</div>
+                    <div class="modal-footer">
+                        <button id="btnMsgConfirm" type="button" class="btnbase secondary-btn w-50" onclick="MagConifrm();">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- app modal -->
+        <div class="modal" id="appModal">
+            <div class="modal-dialog  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-header"></h5>
+                        <button type="button" class="close"></button>
+                    </div>
+                    <div class="modal-body  center">
+                        <img id="imgModal-app" src="./index_files/modal-app.png">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btnbase secondary-btn w-50 font-bold " onclick="AndroidApp()">
+                            <i class="ic-app ic-android"></i>Android</button>
+                        <button type="button" class="btnbase secondary-btn w-50 font-bold " onclick="IOSApp()"><i class="ic-app ic-ios"></i>IOS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="footer menu">
+            <a class="foot-btn active" href=""><i class="nav-ic ic-home"></i><span id="Home">首頁</span></a>
+            <a class="foot-btn" href=""><i class="nav-ic ic-address"></i><span id="Address">備用網址</span></a>
+            <a class="foot-btn" href=""><i class="nav-ic ic-report"></i><span id="Report">報表</span></a>
+            <a class="foot-btn" href=""><i class="nav-ic ic-contact"></i><span id="Contact">聯絡我們</span></a>
+            <a class="foot-btn" href=""><i class="nav-ic ic-my"></i><span id="My">我的</span></a>
+        </div>
+        <!-- nav-side -->
+        <div class="mask"></div>
+        <div class="nav-side">
+            <div id="navside-logo" class="logo" style="background-image: url(https://h1code.royal-test.com/images/zh-tw/logo.png);"></div>
+            <ul class="menu-inner">
+                <li><i class="icon ic-intro"></i><span id="intro">賭場介紹</span></li>
+                <li><i class="icon ic-intro2"></i><span id="intro2">館別介紹</span></li>
+                <li><i class="icon ic-news"></i>Royal Gclub News</li>
+                <li><i class="icon ic-new2"></i>2020 Royal Gclub News</li>
+                <li><i class="icon ic-rule"></i><span id="rule">會員規章</span></li>
+                <li><i class="icon ic-privacy"></i><span id="privacy">隱私權宣告</span></li>
+                <li><i class="icon ic-news"></i><span id="clearcache">Clear Cache</span></li>
+            </ul>
+            <div class="btn-wrap">
+                <button id="NavLogout" type="button" class="btnbase secondary-btn w-50">登入</button>
+            </div>
+        </div>
+
+
+        <input type="hidden" value="zh-tw" id="Culture">
+        <input type="hidden" value="index" id="PageName">
+    </div>
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
