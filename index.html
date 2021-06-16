@@ -34,7 +34,7 @@
 
     <div class="main-content bg-index" style="min-height: 927px;">
         <!-- 輪撥BANNER -->
-        <div class="banner-section ">
+        <div class="banner-section">
             <div id="bannerSwiper" class="swiper-container swiper-container-initialized swiper-container-horizontal">
                 <div class="swiper-wrapper" id="swiper-wrapper-1b1bed87a6eadc4a" aria-live="off" style="transform: translate3d(0px, 0px, 0px); transition: all 0ms ease 0s;">
                     <div class="swiper-slide swiper-slide-active" role="group" aria-label="1 / 2" style="width: 651px;">
@@ -141,7 +141,6 @@
             <div class="swiper-button-next swiper-button-white" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-4b97e077dc518f9f" aria-disabled="false"></div>
             <div class="swiper-button-prev swiper-button-white swiper-button-disabled" tabindex="-1" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-4b97e077dc518f9f" aria-disabled="true"></div>
             <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
-        <div style="height:90px"></div>
         <!-- login out modal -->
         <div class="modal " id="exitModal">
             <div class="modal-dialog  modal-dialog-centered">
@@ -193,6 +192,8 @@
         </div>
         <!-- footer -->
         <div class="footer menu">
+            <div class="ftBar"></div>
+
             <a class="foot-btn active" href=""><i class="nav-ic ic-home"></i><span id="Home">首頁</span></a>
             <a class="foot-btn" href=""><i class="nav-ic ic-address"></i><span id="Address">備用網址</span></a>
             <a class="foot-btn" href=""><i class="nav-ic ic-report"></i><span id="Report">報表</span></a>
@@ -203,6 +204,7 @@
         <div class="mask"></div>
         <div class="nav-side">
             <div id="navside-logo" class="logo" style="background-image: url(https://h1code.royal-test.com/images/zh-tw/logo.png);"></div>
+
             <ul class="menu-inner">
                 <li><i class="icon ic-intro"></i><span id="intro">賭場介紹</span></li>
                 <li><i class="icon ic-intro2"></i><span id="intro2">館別介紹</span></li>
@@ -227,6 +229,13 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
+
+
+    <script>
+        $('.ftBar').click(function() {
+            $('.footer,.main-content').toggleClass('on')
+        })
+    </script>
 </body>
 
 </html>

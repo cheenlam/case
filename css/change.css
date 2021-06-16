@@ -2,6 +2,18 @@
     padding-bottom: .25rem;
 }
 
+.ftBar {
+    width: 35px;
+    height: 55px;
+    background: #158ff7 url(../images/gear.svg)no-repeat center / 60%;
+    position: absolute;
+    top: 10px;
+    left: -35px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+    display: none;
+}
+
 .nav-side {
     max-width: 300px;
     overflow: auto;
@@ -14,27 +26,58 @@
 
 .nav-side .logo {
     width: 100%;
+    height: 80px;
     margin: 0;
     background-size: 50%;
     background-position: center;
 }
 
+.game-container {
+    margin-bottom: 50px;
+}
+
 @media screen and (orientation: landscape) {
     .header {
-        width: calc(100vw - 80px);
-        right: 0;
-        left: unset;
+        height: 60px;
     }
     .footer {
         width: 80px;
-        top: 0;
+        top: 60px;
+        right: 0;
+        left: unset;
+        height: calc(100vh - 60px);
         display: flex;
         flex-direction: column;
-        z-index: 20;
         border-radius: 0;
-        box-shadow: 5px 0 4px rgba(0, 0, 0, 0.2);
+        box-shadow: -5px 0 4px rgba(0, 0, 0, 0.2);
+        transform: translateX(100%);
+        transition: .5s;
+    }
+    .footer.on {
+        transform: translateX(0%);
+    }
+    .ftBar {
+        display: block;
+    }
+    .game-container {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+    .game-container .game-list {
+        width: 50%;
+        padding: 5px;
+    }
+    .swiper-slide {
+        width: 100% !important;
     }
     .main-content {
-        padding-left: 80px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .quick-menu-section {
+        order: 2;
+    }
+    .gamemenu-section {
+        order: 1;
     }
 }
