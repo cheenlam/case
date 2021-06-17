@@ -7,7 +7,7 @@
     height: 55px;
     background: #158ff7 url(../images/gear.svg)no-repeat center / 60%;
     position: absolute;
-    top: 10px;
+    top: 70px;
     left: -35px;
     border-radius: 5px 0 0 5px;
     cursor: pointer;
@@ -42,16 +42,17 @@
     }
     .footer {
         width: 80px;
-        top: 60px;
+        top: 0;
         right: 0;
         left: unset;
-        height: calc(100vh - 60px);
+        height: 100vh;
         display: flex;
         flex-direction: column;
         border-radius: 0;
         box-shadow: -5px 0 4px rgba(0, 0, 0, 0.2);
         transform: translateX(100%);
         transition: .5s;
+        z-index: 20;
     }
     .footer.on {
         transform: translateX(0%);
