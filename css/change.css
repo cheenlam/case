@@ -15,8 +15,7 @@
 }
 
 .nav-side {
-    max-width: 300px;
-    overflow: auto;
+    max-width: 270px;
     min-height: unset;
     height: 100vh;
     top: 0;
@@ -34,6 +33,15 @@
 
 .game-container {
     margin-bottom: 50px;
+}
+
+.menuCnt {
+    height: calc(100vh - 80px);
+    overflow: auto;
+}
+
+.menu-inner li:last-child {
+    margin-top: 40px;
 }
 
 @media screen and (orientation: landscape) {
@@ -73,12 +81,10 @@
     }
     .main-content {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
     }
-    .quick-menu-section {
-        order: 2;
-    }
-    .gamemenu-section {
+    .banner-section {
         order: 1;
     }
 }
