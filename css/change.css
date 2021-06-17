@@ -82,9 +82,11 @@
     .main-content {
         display: flex;
         flex-direction: column;
-        /* flex-direction: column-reverse; */
     }
     .banner-section {
         order: 1;
+    }
+    .menuCnt {
+        padding-bottom: 50px;
     }
 }
